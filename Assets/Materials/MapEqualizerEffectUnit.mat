@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MapUnit
+  m_Name: MapEqualizerEffectUnit
   m_Shader: {fileID: -6465566751694194690, guid: 688f2c3ab76ad5746aaf5262e5dd679f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -59,8 +59,8 @@ Material:
     - _QueueOffset: 0
     m_Colors:
     - _CameraOffset: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 0, g: 1, b: 0.8703723, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _Curve: {r: 0, g: 0, b: 0, a: 0}
-    - _Emission: {r: 0, g: 0, b: 0, a: 0}
+    - _Emission: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

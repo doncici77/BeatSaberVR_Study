@@ -11,6 +11,11 @@ public class LevelManager : MonoBehaviour
     private Transform[] _mapUnits;
     private int[] _unitIndices;
 
+    private void Awake()
+    {
+        GameManager.gameSession.playSpeed = _speed;
+    }
+
     private void Start()
     {
         _mapUnits = new Transform[_initSpawnCount];
