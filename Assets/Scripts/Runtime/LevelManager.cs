@@ -10,9 +10,12 @@ public class LevelManager : MonoBehaviour
 
     private Transform[] _mapUnits;
     private int[] _unitIndices;
+    AudioSource _audioSource;
 
     private void Awake()
     {
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.clip = GameManager.gameSession.selectedSongSpec.audioClip;
         GameManager.gameSession.playSpeed = _speed;
     }
 

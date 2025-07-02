@@ -105,4 +105,9 @@ public class NoteManager : MonoBehaviour
             yield return null;
         }
     }
+
+    public bool TryHit(Transform note)
+    {
+        return _noteTable.Remove(note);
+    }
 }

@@ -11,7 +11,7 @@ namespace Assets.Scripts.Utils.Algorithm.ConvexHull
         /// <param name="point">편면위의 임의의 점</param>
         public Plane(Vector3 normal, Vector3 point)
         {
-            this.normal = normal;
+            this.normal = normal.normalized;
             this.distance = Vector3.Dot(normal, point);
         }
 
